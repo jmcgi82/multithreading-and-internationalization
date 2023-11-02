@@ -1,5 +1,6 @@
 package edu.wgu.d387_sample_code;
 
+import edu.wgu.d387_sample_code.threads.TimeThread;
 import edu.wgu.d387_sample_code.threads.TranslateEn;
 import edu.wgu.d387_sample_code.threads.TranslateFr;
 import org.springframework.boot.SpringApplication;
@@ -25,6 +26,13 @@ public class D387SampleCodeApplication {
 		//Start french thread
 		TranslateFr transFr = new TranslateFr();
 		transFr.start();
+
+		//formatting code
+
+
+		//Start time thread
+		TimeThread timeThread = new TimeThread();
+		timeThread.start();
 	}
 
 }
